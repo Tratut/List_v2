@@ -54,7 +54,7 @@ def ft_sred(x):
 
 
 def ft_pos_neg_analysis_lst(x):
-    tab = "        "
+    tab = "\t"
     mas_first_part = []
     mas_sort = ft_pos_neg_separator_lst(x)
 
@@ -72,26 +72,25 @@ def ft_pos_neg_analysis_lst(x):
 
     mst = max_lst(mas_first_part)
 
-    print("Положительные:" + " " * (mst - str0) + tab + "Отрицательные:")
+    print("Положительные:" + tab + "Отрицательные:")
 
-    print("Количество чисел: {},".format(ft_len(mas_sort[2])) + " " * (mst - str1)
+    print("Количество чисел: {},".format(ft_len(mas_sort[2]))
           + tab + "Количество чисел: {}".format(ft_len(mas_sort[1])))
 
-    print("Максимальная цифра: {},".format(max_lst(mas_sort[2])) + " " * (mst - str2)
+    print("Максимальная цифра: {},".format(max_lst(mas_sort[2]))
           + tab + "Максимальная цифра: {}".format(max_lst(mas_sort[0])))
 
-    print("Минимальная цифра: {},".format(min_lst(mas_sort[2])) + " " * (mst - str3)
+    print("Минимальная цифра: {},".format(min_lst(mas_sort[2]))
           + tab + "Минимальная цифра: {}".format(min_lst(mas_sort[0])))
 
-    print("Сумма чисел: {},".format(ft_sumlst(mas_sort[2])) + " " * (mst - str4)
+    print("Сумма чисел: {},".format(ft_sumlst(mas_sort[2]))
           + tab + "Сумма чисел: {}".format(ft_sumlst(mas_sort[0])))
 
-    print("Среднее значение: {},".format(ft_sred(mas_sort[2])) + " " * (mst - str5 - 1)
+    print("Среднее значение: {},".format(ft_sred(mas_sort[2]))
           + tab + "Среднее значение: {}".format(ft_sred(mas_sort[0])))
 
     print()
 
-    print("Количество нулей: ", ft_len(mas_sort[1]))
+    print("Количество нулей:", ft_len(mas_sort[1]))
 
-
-ft_pos_neg_analysis_lst([1, -2, 3, -4, 5, -6])
+# ft_pos_neg_analysis_lst([1, -2, 3, -4, 5222222, -6])
